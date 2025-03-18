@@ -39,6 +39,8 @@ tags: []
 - Dokumentieren und Standardisierung für eigene Prozesse (innere Kommunikation zwischen hosts <-> relay <-> client)
 
 
+Der bisherige code kann hier gefunden werden und ist mehr oder weniger fertig (bis auf die Standardisierung) [code]()
+
 ## Bisheriger Zeitaufwand: 
 | Luis | Alim |
 | ---- | ---- | 
