@@ -39,7 +39,7 @@ tags: []
 - Dokumentieren und Standardisierung für eigene Prozesse (innere Kommunikation zwischen hosts <-> relay <-> client)
 
 
-Der bisherige code kann hier gefunden werden und ist mehr oder weniger fertig (bis auf die Standardisierung) [code]()
+Der bisherige code kann hier gefunden werden und ist mehr oder weniger fertig (bis auf die Standardisierung, die auch schon 80% fertig ist) [code](https://github.com/Adotweb/connector_hub)
 
 ## Bisheriger Zeitaufwand: 
 | Luis | Alim |
@@ -56,8 +56,8 @@ Der bisherige code kann hier gefunden werden und ist mehr oder weniger fertig (b
 | Docker/evt Network ui/ux 1.5 - 2 h | Backend für docker App 1.5 - 2 h|
 | | online Connection panel (zeigt connections und öffentliche/verfügbare websites) 2 - 3 h | 
 | evtl. bugfixes 0 - 3 h | evtl. bugfixes 0 - 3 h |
-| lokale Netzwerk Funktion| lokale Netzwerk Funktion|
-| ca. 7 h | ca. 7 h |
+| lokale Netzwerk Funktion 3 - 4 h| lokale Netzwerk Funktion 3 - 4 h|
+| ca. 10  h | ca. 10 h |
 
 | KW | Luis | Alim |
 | --- | --- | --- | 
