@@ -71,3 +71,7 @@ tags: []
 
 
 [Fotos, Code, etc.](https://github.com/Adotweb/Distributed-Systems-InfoEF)
+
+
+## Endziel
+Das Endziel ist eine einfache Art selbst Cloud Dienste o.ä. aufzuspinnen ohne grosse Mühe. Lade unsere .exe herunter gehe auf das GitHub Repo klick auf den link der entsteht und fertig.
