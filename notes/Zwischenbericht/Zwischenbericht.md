@@ -4,76 +4,80 @@ aliases: []
 tags: []
 ---
 
-# Zwischenbericht 
+# Zwischenbericht
 
-**Erledigt:**
-- [x] Relay server (mit node) läuft auf heim server instance (gehört mir) (Alim) 
-- [x] Einfaches App Interface (nur grundgerüst und "test-strecke") mit tauri (luis)
+## Erledigt
+- [x] Relay-Server (Node.js) läuft auf Heimserver-Instanz (Alim)
+- [x] Einfaches App-Interface (Grundgerüst + "Test-Strecke") mit Tauri (Luis)
 
-**In bearbeitung**
-- [>] Kommunkitationsstandard (+- fertig) für kommunikation mit servern (host->relay und relay->client) 
-        als auch ein rest relay für einfache zwecke (Alim)
-- [>] Funkionales app-interface und ui (Luis)
+## In Bearbeitung
+- [>] Kommunikationsstandard (ca. 80 % fertig) für:
+  - Host → Relay
+  - Relay → Client
+  - REST-Relay für einfache Zwecke (Alim)
+- [>] Funktionales App-Interface und UI (Luis)
 
+## Noch zu erledigen
+- [ ] App-Backend: Verbindung mit Servern (Alim)
+- [ ] REST-Implementierung für Relay-Server (Alim)
+- [ ] UI/UX für App-Interface (Interaktion mit Backend von Alim) (Luis)
+- [ ] Docker-Backend: "Starte Service X / Lade Service X von GitHub herunter" (Luis)
 
-**Noch zu erledigen**
-- [ ] App backend, verbindung mit servern (Alim)
-- [ ] REST implementierung für relay server (Alim)
+## Bisherige Bemerkungen
+- Tauri erweist sich als komplizierter als erwartet (vor allem bei der Kompilation unter Windows)
+- Aufgrund schulischer Verpflichtungen bislang wenig Zeit investiert
+- Zusammenarbeit erschwert durch unterschiedliche Stundenpläne (wird durch bessere Abstimmung via Discord optimiert)
 
-- [ ] UI/UX für app-interface (interaktion mit backend von Alim) (Luis)
-- [ ] Docker backend, "starte Service x/lade service x von github herunter" (Luis)
+## Bisher gelernt / erarbeitet
 
-## Bisherige Bemerkungen: 
-- Tauri gibt sich schwerer als erwartet
-- Bisher nicht besonders viel Zeit Aufgewendet (andere Schulsachen zu erledigen) 
-- Zusammenarbeit erschwert aufgrund unterschiedlicher Stundenpläne (wird unbedingt verbessert! via discord etc.)
-
-## Bisher gelernt/erarbeitet
-**Luis** 
-- NPM und package manager für svelte (in Zusammenhang mit tauri)
-- Cross compilation für native Desktop Apps (in Zusammenhang mit tauri)
-
+**Luis**
+- Umgang mit NPM und Package-Management für Svelte (in Zusammenhang mit Tauri)
+- Cross-Compilation für native Desktop-Apps (Tauri)
 
 **Alim**
-- Tauri und Rust im bezug auf native apps
-- Dokumentieren und Standardisierung für eigene Prozesse (innere Kommunikation zwischen hosts <-> relay <-> client)
+- Tauri und Rust im Bezug auf native Apps
+- Dokumentation und Standardisierung für interne Prozesse (Kommunikation Host ↔ Relay ↔ Client)
 
+Der bisherige Code ist hier zu finden und größtenteils fertig (Kommunikationsstandard zu ca. 80 %):
+[GitHub Repository](https://github.com/Adotweb/connector_hub)
 
-Der bisherige code kann hier gefunden werden und ist mehr oder weniger fertig (bis auf die Standardisierung, die auch schon 80% fertig ist) [code](https://github.com/Adotweb/connector_hub)
+## Bisheriger Zeitaufwand
 
-## Bisheriger Zeitaufwand: 
-| Luis | Alim |
-| ---- | ---- | 
-| Tauri dokumentation einlesen und projekstart 1.5 h | Websocket Relay server in node 1.5h |
-| | Kommunkitationsstandard Dokumentation (unfertig) 0.5 h | 
-| 1.5 h | 2 h |
+| Luis                                             | Alim                                                      |
+| ------------------------------------------------ | --------------------------------------------------------- |
+| Tauri-Dokumentation + Projektstart: 1.5 h        | WebSocket-Relay-Server in Node.js: 1.5 h                  |
+|                                                  | Kommunikationsstandard-Dokumentation (unfertig): 0.5 h    |
+| **Summe: 1.5 h**                                 | **Summe: 2 h**                                            |
 
 ## Pläne
-| Luis | Alim |
-| ---- | ---- | 
-| UI/UX für desktop App 1.5 - 2 h | Online Adminpanel 0.5 H |
-| UI/UX bugfixes/redo's 2 h | Backend für desktop App 1.5 - 2 h| 
-| Docker/evt Network ui/ux 1.5 - 2 h | Backend für docker App 1.5 - 2 h|
-| | online Connection panel (zeigt connections und öffentliche/verfügbare websites) 2 - 3 h | 
-| evtl. bugfixes 0 - 3 h | evtl. bugfixes 0 - 3 h |
-| lokale Netzwerk Funktion 3 - 4 h| lokale Netzwerk Funktion 3 - 4 h|
-| ca. 10  h | ca. 10 h |
 
-| KW | Luis | Alim |
-| --- | --- | --- | 
-| 12 | Einfacher Desktop App Prototyp | Fertiger Kommunkitationsstandard |
-| 13 | Docker Implementierung in der App | Fertiger relay server (REST und Websocket möglicherweise UDP/TCP ) | 
-| 14 | github-connection funktion (github webhooks und herunterladen/ausführen von Repos/Projekten) | rust backend für Desktop App (flüssig + sicher) |
-| Frühlingsferien | bugfixes | bugfixes |
-| 16 | UI/UX überarbeiten | UI/UX überarbeiten (relay server) |
-| 17 | local network connection | local network connection |
-| 18 | Feinschliff | Feinschliff |
-| 19 |  Projektpräsentation| Projektpräsentation |
+| Luis                                                    | Alim                                                         |
+| -------------------------------------------------------- | ------------------------------------------------------------ |
+| UI/UX für Desktop-App: 1.5 - 2 h                         | Online-Adminpanel: 0.5 h                                     |
+| UI/UX-Bugfixes / Redesigns: 2 h                          | Backend für Desktop-App: 1.5 - 2 h                           |
+| Docker / ggf. Network-UI/UX: 1.5 - 2 h                   | Backend für Docker-App: 1.5 - 2 h                            |
+| Eventuelle Bugfixes: 0 - 3 h                             | Online-Connection-Panel (zeigt Verbindungen & verfügbare Services): 2 - 3 h |
+| Lokale Netzwerk-Funktion: 3 - 4 h                        | Lokale Netzwerk-Funktion: 3 - 4 h                            |
+| **Gesamt: ca. 10 h**                                     | **Gesamt: ca. 10 h**                                         |
 
+## Zeitplan
 
+| KW               | Luis                                              | Alim                                                           |
+| ---------------- | ------------------------------------------------- | -------------------------------------------------------------- |
+| **12**           | Einfacher Desktop-App-Prototyp                    | Fertiger Kommunikationsstandard                                |
+| **13**           | Docker-Integration in die App                     | Fertiger Relay-Server (REST + WebSocket, evtl. UDP/TCP)        |
+| **14**           | GitHub-Connection (Webhooks + Download/Run Repos) | Rust-Backend für Desktop-App (performant & sicher)             |
+| **Frühlingsferien** | Bugfixes                                          | Bugfixes                                                       |
+| **16**           | UI/UX-Überarbeitung                               | UI/UX-Überarbeitung (Relay-Server)                             |
+| **17**           | Lokale Netzwerk-Connection (Frontend-seitig)      | Lokale Netzwerk-Connection (Backend-seitig)                    |
+| **18**           | Feinschliff                                       | Feinschliff                                                    |
+| **19**           | Projektpräsentation                               | Projektpräsentation                                            |
 
-[Fotos, Code, etc.](https://github.com/Adotweb/Distributed-Systems-InfoEF)
-
+Weitere Infos, Fotos & Code:  
+[Projekt-Repository](https://github.com/Adotweb/Distributed-Systems-InfoEF)
 
 ## Endziel
-Das Endziel ist eine einfache Art selbst Cloud Dienste o.ä. aufzuspinnen ohne grosse Mühe. Lade unsere .exe herunter gehe auf das GitHub Repo klick auf den link der entsteht und fertig.
+Unser Ziel ist es, eine einfache Lösung bereitzustellen, um eigene Cloud-Dienste o. Ä. schnell und unkompliziert aufzusetzen.  
+Beispiel: Lade unsere .exe herunter, öffne die App, wähle das GitHub-Repo aus, klicke auf den generierten Link – und fertig!
+
+
